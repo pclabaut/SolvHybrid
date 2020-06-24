@@ -1,0 +1,22 @@
+addAtomTypes {
+        { "H "  "H" "sp3" }
+        { "C"  "C" "sp3" }
+        { "O"  "O" "sp2" }
+        { "N"  "N" "sp3" }
+	{ "H1"  "H" "sp3" }
+	{ "H2"  "H" "sp3" }
+	{ "OW"  "O" "sp3" }
+        { "Ni"  "Ni" "sp3" }
+        { "Ru"  "Ru" "sp3" }
+        { "Pt"  "Pt" "sp3" }
+        { "Na"  "Na" "sp3" }
+        { "Al"  "Al" "sp3" }
+        { "Au"  "Au" "sp3" }
+}
+loadOff solvents.lib
+WAT = TP3
+loadamberparams Lib/uff.dat
+loadamberparams Lib/music_soft.dat
+loadoff Lib/uff.lib
+
+

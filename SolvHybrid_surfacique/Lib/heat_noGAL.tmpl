@@ -1,0 +1,28 @@
+heating
+ &cntrl
+   imin = 0, nstlim = 200000, irest = 0, ntx = 1, dt = 0.002,
+   ntt = 1, temp0 = 300.0, tempi = 5.0, tautp = 1.0,
+   ntp = 3, pres0 = 1.0, taup = 2.0, csurften=-1,
+   ntb = 2,
+   ntc = 2, ntf = 1,
+   ioutfm = 1, iwrap = 1,
+   ntwe = 10000, ntwx = 10000, ntpr = 10000, ntwr = 50000,
+   ibelly = 1,
+   bellymask =':WAT',
+   icfe = 1, clambda = %L%, scalpha = 0.5, scbeta = 12.0,
+   logdvdl = 0,
+   %FE%
+ /
+ &ewald
+  eedmeth=4,
+ / 
+
+ &wt
+   type='TEMP0',
+   istep1 = 0, istep2 = 200000,                                      
+   value1 = 5.0, value2 = 300.0
+ /
+
+ &wt type = 'END'
+ /
+

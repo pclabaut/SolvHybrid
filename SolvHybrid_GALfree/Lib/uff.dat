@@ -1,0 +1,62 @@
+AMBER General Force Field for organic molecules (Version 1.5, January 2013)
+H 1.008 0.0
+C 12.01 0.0
+N 14.01 0.0
+O 16.00 0.0
+Na 23.00 0.0
+Al 26.98 0.0
+Ni 58.69 0.0
+Cu 63.55 0.0
+Ru 101.07 0.0
+Pt 195.080 0.0
+Au 196,967 0.0
+Pd 106.42 0.0
+HW 1.008         0.000               H in TIP3P water
+OW 16.00         0.000               oxygen in TIP3P water
+
+OW-HW  553.0    0.9572    ! TIP3P water
+HW-OW  553.0    0.9572    ! TIP3P water
+HW-HW  553.0    1.5136      TIP3P water
+
+hw-ow-hw   42.730     104.520	AMBER              1	TIP3P_water
+HW-OW-HW    100.      104.52    TIP3P water
+
+X -c -c -X    4    1.200       180.000           2.000
+
+#  hw  ow  0000.     0000.                                4.  flag for fast water
+
+
+MOD4      RE
+  HW          0.0000  0.0000             TIP3P water model
+  OW          1.7683  0.1520             TIP3P water model
+H	1.443	0.044
+C	1.9255	0.105
+N	1.83	0.069
+O	1.75	0.06
+Na	1.4915	0.03
+Mg	1.5105	0.111
+Al	2.2495	0.505
+Si	2.1475	0.402
+P	2.0735	0.305
+S	2.0175	0.274
+Cl	1.9735	0.227
+Ti	1.5875	0.017
+V	1.572	0.016
+Cr	1.5115	0.015
+Mn	1.4805	0.013
+Fe	1.456	0.013
+Co	1.436	0.014
+Ni	1.417	0.015
+Cu	1.7475	0.005
+Zn	1.3815	0.124
+Ru	1.4815	0.056
+Rh	1.4645	0.053
+Pd	1.4495	0.048
+Ag	1.574	0.036
+Re	1.477	0.066
+Os	1.56	0.037
+Ir	1.42	0.073
+Pt	1.377	0.08
+Au	1.6465	0.039
+Hg	1.3525	0.385
+END

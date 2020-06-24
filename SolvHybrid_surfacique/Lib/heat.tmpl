@@ -1,0 +1,51 @@
+heating
+ &cntrl
+   imin = 0, nstlim = 200000, irest = 0, ntx = 1, dt = 0.002,
+   ntt = 1, temp0 = 300.0, tempi = 5.0, tautp = 1.0,
+   ntp = 3, pres0 = 1.0, taup = 2.0, csurften=-1,
+   ntb = 2,
+   ntc = 2, ntf = 1,
+   ioutfm = 1, iwrap = 1,
+   ntwe = 10000, ntwx = 10000, ntpr = 10000, ntwr = 50000,
+   ibelly = 1,
+   bellymask =':WAT',
+   icfe = 1, clambda = %L%, scalpha = 0.5, scbeta = 12.0,
+   logdvdl = 0,
+   %FE%
+ /
+ &ewald
+  eedmeth=4,
+ / 
+
+ &wt
+   type='TEMP0',
+   istep1 = 0, istep2 = 200000,                                      
+   value1 = 5.0, value2 = 300.0
+ /
+
+ &wt type = 'END'
+ /
+
+&music
+  debug = false,
+  do_coulomb_correction = true,
+  pt_plane="yz", ! Surface plane - depends on how you orient your system.
+  c6_pt_o = 5724.0 !1878.541, ! Since we have put dispersion to false, this parameter does not matter
+  a6_pt_o = 35670.0 !3191.176, ! Since we have put dispersion to false, this parameter does not matter
+  do_angle = true,
+  s_ang = 11.135,
+  r_ang = 2.441,
+  slope = 25.0,
+  radius = 3.3,
+  a1 = 15.768,
+  a2 = 1.594,
+  a3 = 1.922 !-0.5470,
+  a4 = 2.838 !0.2400,
+  b_h_surf = 304.081  !308.342
+ n_h_surf = 5, ! exponent for propeller contribution
+ do_gauss = true, ! calculate repulsion between OW and VS
+ vs_atom_type = "Pt", 
+ eps_gauss = -8.901, !  in kcal/mol; actually an attraction.
+ bxy_gauss = 9.331, ! in 1/A^2
+ bz_gauss = .102, ! in 1/A^2
+/
