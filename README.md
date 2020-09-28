@@ -52,7 +52,6 @@ If needed, the Reset_folder.sh function can reset the whole computation director
 
 To obtain the complete adsorption free energies, 4 contributions are required, following eq. 8 of the corresponding paper:
  - <img src="https://render.githubusercontent.com/render/math?math=%5CDelta_a%20E%5E%7Bvac%7D_%7Bdft%7D"> that must be manually computed from the OUTCAR files of VASP
- --> **Would be more logical to be computed as well based on the OUTCAR**
  - <img src="https://render.githubusercontent.com/render/math?math=%5CDelta_a%20E%5E%7Bvac%7D_%7BMM%7D"> that can be computed from the MM gas phase computations whose results are in analyse.dat as "SP for X in gas phase".
  - <img src="https://render.githubusercontent.com/render/math?math=%5CDelta_%7B%7BTI%7D_1%7D"> G and <img src="https://render.githubusercontent.com/render/math?math=%5CDelta_%7B%7BTI%7D_2%7D"> G that are displayed in analyse.dat receptively as : "Delta G TI in surface for one molecule in kcal/mol" and "Delta G TI in bulk for one molecule in kcal/mol".
 The complete adsorption free energy can then be obtain following the equation as <img src="https://render.githubusercontent.com/render/math?math=%5CDelta_a%20E%5E%7Bvac%7D_%7Bdft%7D%20-%20%5CDelta_a%20E%5E%7Bvac%7D_%7BMM%7D%20%2B%20%5CDelta_%7B%7BTI%7D_2%7D%20G%20-%20%5CDelta_%7B%7BTI%7D_1%7D%20G">
