@@ -1,5 +1,6 @@
 # Content
-This manual and package were written by Clabaut Paul alongside with the original article : XXXX. The manual should be used as operational guidelines but should not substitute to the reading of the corresponding article. The package aims at providing an easy-to-use tool to evaluate the adsorption free energy of any molecule on a Pt (111) surface and in water. Two other tools are provided: the first to compute the solvation energy of a whole surface, as used and discused in the article also; and the second to also obtain the adsorption free energy of a molecule on a surface, but whithout using the GAL17 forcefield, and can therefore be used for other surfaces, at the cost of a more limited accuracy.
+This manual and package were written by Clabaut Paul alongside with the original article : Clabaut, P.; Schweitzer, B.; Götz, A. W.; Michel, C.; Steinmann, S. N. Solvation Free Energies and Adsorption Energies at the Metal/Water Interface from Hybrid QM-MM Simulations. J. Chem. Theory Comput. 2020. https://doi.org/10.1021/acs.jctc.0c00632.
+. The manual should be used as operational guidelines but should not substitute to the reading of the corresponding article. The package aims at providing an easy-to-use tool to evaluate the adsorption free energy of any molecule on a Pt (111) surface and in water. Two other tools are provided: the first to compute the solvation energy of a whole surface, as used and discused in the article also; and the second to also obtain the adsorption free energy of a molecule on a surface, but whithout using the GAL17 forcefield, and can therefore be used for other surfaces, at the cost of a more limited accuracy.
 
 
 # Dependancies:
@@ -132,4 +133,5 @@ Where the TI1 is conducted, contains a base_files directory with all amber prmto
 Where the TI2 is conducted, same as TI_surface
 
 # Credits
-This package relies on AMBER17, the GAL17 forcefield and cm5pack and some part of the code were re-used from http://ambermd.org/tutorials/advanced/tutorial9/#overview. You are welcome to use it but please aknowledge its usage by properly citing them and the article associated to this work: XXX
+This package relies on AMBER17, the GAL17 forcefield and cm5pack and some part of the code were re-used from http://ambermd.org/tutorials/advanced/tutorial9/#overview. You are welcome to use it but please aknowledge its usage by properly citing them and the article associated to this work: Clabaut, P.; Schweitzer, B.; Götz, A. W.; Michel, C.; Steinmann, S. N. Solvation Free Energies and Adsorption Energies at the Metal/Water Interface from Hybrid QM-MM Simulations. J. Chem. Theory Comput. 2020. https://doi.org/10.1021/acs.jctc.0c00632.
+
