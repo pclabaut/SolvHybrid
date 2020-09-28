@@ -6,8 +6,8 @@ This manual and package were written by Clabaut Paul alongside with the original
 # Dependancies:
  - Python2
  - Python package: numpy, periodic (pip install numpy; pip install periodic)
- - AMBER17 (patched) (Ensure tleap and its associated file and sander.MPI are in your path)
- - cm5pack (https://comp.chem.umn.edu/cm5pac/) (Ensure cm5pac.exe is in your path) NB: Matrix size enhancement might be needed depending on the system size)
+ - AMBER17 (patched) or the trunk version of AmberTools (Ensure tleap and its associated file and sander.MPI are in your path)
+ - cm5pack (https://comp.chem.umn.edu/cm5pac/) (Ensure cm5pac.exe is in your path) NB: Matrix size "MAT" might need to be increased depending on the system size)
  - VASP with dDsC correction (for input files)
 
 # Adaptation to your queuing system:
